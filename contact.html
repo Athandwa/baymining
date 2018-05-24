@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+
+	    <title>Bay Mining</title>
+
+			<!-- Web Fonts -->
+			<!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+			<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+			<!--[if lt IE 9]>
+			<script src="js/vendor/html5shim.js"></script>
+			<script src="js/vendor/respond.min.js"></script>
+			<![endif]-->
+	</head>
+
+
+	<body id="page-top">
+		<div id="st-container" class="st-container">
+
+
+							<div class="send-feedback">
+								<h2>Send us your feedback</h2>
+								<?php include('send_form_email.php'); ?>
+								<link rel="stylesheet" href="stylesheet.css" type="text/css">
+								<div class="container">
+								  <form id="contact" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
+								    <h3>Contact</h3>
+								    <h4>Contact us today, and get reply with in 24 hours!</h4>
+								    <fieldset>
+								      <input placeholder="Your name" type="text" name="name" tabindex="1" autofocus>
+								      <span class="error"><?= $name_error ?></span>
+								    </fieldset>
+								    <fieldset>
+								      <input placeholder="Your Email Address" type="text" name="email" tabindex="2">
+								      <span class="error"><?= $email_error ?></span>
+								    </fieldset>
+								    <fieldset>
+								      <input placeholder="Your Phone Number" type="text" name="phone" tabindex="3">
+								      <span class="error"><?= $phone_error ?></span>
+								    </fieldset>
+								    <fieldset>
+								      <input placeholder="Your Web Site starts with http://" type="text" name="url"  tabindex="4" >
+								      <span class="error"><?= $url_error ?></span>
+								    </fieldset>
+								    <fieldset>
+								      <textarea value="<?= $message ?>" name="message" tabindex="5">
+								      </textarea>
+								    </fieldset>
+								    <fieldset>
+								      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+								    </fieldset>
+								    <div class="success"><?= $success ?></div>
+								  </form>
+								</div>							</div><!-- /.send-feedback -->
+						</div><!-- /.container -->
+					</section>
+
+		<!-- copyright-section end -->
+ </div>
+ <!-- .st-content -->
+</div>
+
+<!-- .offcanvas-menu -->
+</div>
+
+
+sc
+	</body>
+</html>
